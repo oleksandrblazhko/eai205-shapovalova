@@ -11,7 +11,7 @@ id_dodatok SERIAL PRIMARY KEY,
 CREATE TABLE Танець(
 id_dance SERIAL PRIMARY KEY,
 Назва varchar,
-Додаткова інформація varchar(1500),
+Додаткова_інформація varchar(1500),
 id_dodatok int references Додаток(id_dodatok) ON DELETE CASCADE
 );
 
@@ -31,7 +31,7 @@ id_informacion SERIAL PRIMARY KEY,
 Країна varchar,
 Інтенсивність int,
 Інвалідність int,
-Тип танцю char,
+Тип_танцю char,
 Історія char(1500)
 id_dance int references Танець(id_dance) ON DELETE CASCADE
 );
