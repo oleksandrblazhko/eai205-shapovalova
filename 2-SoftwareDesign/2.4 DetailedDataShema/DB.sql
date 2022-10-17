@@ -56,3 +56,10 @@ id_korystuvachka int references Користувачка(id_korystuvachka) ON DE
 id_informacion int references Інформація(id_informacion) ON DELETE CASCADE,
 primary key(id_informacion, id_korystuvachka)
 );
+ALTER TABLE Користувачка ADD CONSTRAINT nickname_template
+    CHECK (regexp_like(Прізвище, 
+	           '@[a-z0-9_-]+'));
+
+ALTER TABLE Користувачка ADD CONSTRAINT user_phone_template
+    CHECK ( regexp_like(Номер_телефону, 
+	          '^(\([0-9]{3}\))?[0-9]{3}-[0-9]{4}$'));
