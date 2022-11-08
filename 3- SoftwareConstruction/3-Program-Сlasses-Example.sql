@@ -49,5 +49,4 @@ CREATE OR REPLACE TYPE Застосунок_для_танців UNDER Танец
   /* Процедура виводу на екран значень атрибутів */
       MEMBER PROCEDURE display
 ); 
-); 
-/
+
