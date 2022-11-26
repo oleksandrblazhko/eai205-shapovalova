@@ -1,0 +1,5 @@
+|NFR id|Test Case id|Опис кроків тестового сценарію|Опис очікуваних результатів|
+|:-|:-|:-|:-:|
+|NFR1.1 |TC1.5 |Початкові умови: відсутні. <br> Кроки сценарію: відсутні. |Екранна форма: <br> ![image](https://github.com/oleksandrblazhko/eai205-shapovalova/blob/with_labotary_work_8/2-SoftwareDesign/2.8-TestCases/%D1%84%D0%BE%D1%80%D0%BC%D0%B0.drawio.png) |
+|NFR1.1 |TC1.6 |Початкові умови: успішно пройдено TC1.5. <br> Кроки сценарію: <br> 1) В поле країна внесено значення Україна <br>2) В поле Інтенсивність внесено значення: 4 <br>3) В поле Назва внесено Гопак |Екранна форма: <br> ![image](https://github.com/oleksandrblazhko/eai205-shapovalova/blob/with_labotary_work_8/2-SoftwareDesign/2.8-TestCases/%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%BD%D0%B5%D0%BD%D0%B0%D1%84%D0%BE%D1%80%D0%BC%D0%B0.drawio.png)|
+|NFR1.1 |TC1.7 |Початкові умови: успішно пройдено TC1.6. <br> Кроки сценарію: <br> 1) Натиснуто кнопку «Пошук» |Екранна форма: <br> ![image](https://github.com/oleksandrblazhko/eai205-shapovalova/blob/with_labotary_work_8/2-SoftwareDesign/2.8-TestCases/%D0%BF%D1%96%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B4%D0%B6%D0%B5%D0%BD%D0%B0%D1%84%D0%BE%D1%80%D0%BC%D0%B0.drawio.png)|
