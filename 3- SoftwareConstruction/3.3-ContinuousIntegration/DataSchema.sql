@@ -1,5 +1,5 @@
 CREATE TABLE Застосунок_для_танців(
-id_dodatok SERIAL PRIMARY KEY,
+id_dodatok int,
 Назва varchar,
 Тип varchar,
 Розмір float,
@@ -9,14 +9,14 @@ id_dodatok SERIAL PRIMARY KEY,
 
 
 CREATE TABLE Танець(
-id_dance SERIAL PRIMARY KEY,
+id_dance SERIAL int,
 Назва varchar,
 Додаткова_інформація varchar(1500),
 id_dodatok int references Додаток(id_dodatok) ON DELETE CASCADE
 );
 
 CREATE TABLE Користувачка(
-id_korystuvachka SERIAL PRIMARY KEY,
+id_korystuvachka int,
 Прізвище varchar,
 Імя varchar,
 Вік int,
@@ -26,7 +26,7 @@ id_dodatok int references Додаток(id_dodatok) ON DELETE CASCADE
 );
 
 CREATE TABLE Інформація(
-id_informacion SERIAL PRIMARY KEY,
+id_informacion int,
 Дата_започаткування date,
 Країна varchar,
 Інтенсивність int,
@@ -37,7 +37,7 @@ id_dance int references Танець(id_dance) ON DELETE CASCADE
 );
 
 CREATE TABLE Відео(
-id_video SERIAL PRIMARY KEY,
+id_video int,
 Назва varchar,
 Розмір_файлу int,
 Формат char,
