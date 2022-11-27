@@ -22,7 +22,7 @@ CREATE OR REPLACE TYPE BODY Застосунок_для_танців AS
     END Застосунок_для_танців;
     
         /* Процедура зміни значень атрибутів */
-	      MEMBER PROCEDURE formar_Застосунок_для_танців(id_dodatok serial, Назва varchar, )
+	      MEMBER PROCEDURE formar_Застосунок_для_танців(id_dodatok int, Назва varchar )
 	      IS
 	      BEGIN
         UPDATE Застосунок_для_танців SET Назва = k_Назва
@@ -33,7 +33,7 @@ CREATE OR REPLACE TYPE BODY Застосунок_для_танців AS
         /* Функції отримання значень атрибутів */
 	      /* get_order_id */
         MEMBER FUNCTION id_dodatok
-	        RETURN serial 
+	        RETURN int
 	      IS
         BEGIN
           RETURN SELF.id_dodatok;
@@ -41,7 +41,7 @@ CREATE OR REPLACE TYPE BODY Застосунок_для_танців AS
         
         /* get_date_order */
         MEMBER FUNCTION get_Назва
-	        RETURN NUMBER 
+	        RETURN Varchar
 	      IS
         BEGIN
           RETURN SELF.Назва;
